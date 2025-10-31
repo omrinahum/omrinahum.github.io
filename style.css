@@ -8,8 +8,8 @@
 }
 
 :root {
-    --primary-color: #2563eb;
-    --primary-dark: #1e40af;
+    --primary-color: #3b82f6;
+    --primary-dark: #2563eb;
     --text-primary: #1f2937;
     --text-secondary: #6b7280;
     --background: #ffffff;
@@ -18,6 +18,7 @@
     --shadow-sm: 0 1px 2px 0 rgba(0, 0, 0, 0.05);
     --shadow-md: 0 4px 6px -1px rgba(0, 0, 0, 0.1);
     --shadow-lg: 0 10px 15px -3px rgba(0, 0, 0, 0.1);
+    --shadow-blue-subtle: 0 4px 6px -1px rgba(59, 130, 246, 0.08);
     --transition: all 0.3s ease;
 }
 
@@ -139,7 +140,7 @@ body {
     min-height: 100vh;
     display: flex;
     align-items: center;
-    background: linear-gradient(135deg, #eff6ff 0%, #ffffff 50%, #f9fafb 100%);
+    background: linear-gradient(135deg, #f9fafb 0%, #ffffff 100%);
 }
 
 .about-content {
@@ -200,7 +201,7 @@ section {
     left: 50%;
     transform: translateX(-50%);
     width: 60px;
-    height: 4px;
+    height: 3px;
     background: linear-gradient(90deg, var(--primary-color) 0%, #60a5fa 100%);
     border-radius: 2px;
 }
@@ -230,7 +231,7 @@ section {
 
 .skill-category:hover {
     transform: translateY(-5px);
-    box-shadow: var(--shadow-lg);
+    box-shadow: var(--shadow-blue-subtle);
 }
 
 .skill-category h3 {
@@ -318,11 +319,13 @@ section {
     border-radius: 12px;
     box-shadow: var(--shadow-sm);
     transition: var(--transition);
+    border-left: 2px solid transparent;
 }
 
 .timeline-content:hover {
-    box-shadow: var(--shadow-md);
-    transform: translateX(5px);
+    box-shadow: var(--shadow-sm);
+    transform: translateX(3px);
+    border-left-color: var(--primary-color);
 }
 
 .timeline-header {
@@ -400,7 +403,7 @@ section {
 
 .project-card:hover {
     transform: translateY(-10px);
-    box-shadow: var(--shadow-lg);
+    box-shadow: 0 20px 25px -5px rgba(0, 0, 0, 0.15), 0 10px 10px -5px rgba(59, 130, 246, 0.2);
 }
 
 .project-media {
@@ -433,12 +436,10 @@ section {
 
 /* When you add real video/gif, use these styles */
 .project-media video,
-.project-media img,
-.project-media iframe {
+.project-media img {
     width: 100%;
     height: 100%;
     object-fit: cover;
-    border: none;
 }
 
 .project-content {
