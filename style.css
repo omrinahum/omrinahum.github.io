@@ -822,6 +822,58 @@ section:nth-child(5) { animation-delay: 0.4s; }
     color: white;
 }
 
+/* Academic Projects Subsection */
+.academic-projects {
+    margin-top: 3rem;
+    padding-top: 2rem;
+    border-top: 1px solid var(--border-color);
+    text-align: center;
+}
+
+.academic-intro {
+    color: var(--text-secondary);
+    font-size: 0.95rem;
+    font-style: italic;
+    margin-bottom: 1.5rem;
+}
+
+.academic-links {
+    display: flex;
+    justify-content: center;
+    gap: 2rem;
+    flex-wrap: wrap;
+}
+
+.academic-link {
+    display: inline-flex;
+    align-items: center;
+    gap: 0.5rem;
+    padding: 0.5rem 1rem;
+    text-decoration: none;
+    color: var(--text-secondary);
+    background-color: var(--background-secondary);
+    border-radius: 8px;
+    border: 1px solid var(--border-color);
+    transition: var(--transition);
+    font-size: 0.9rem;
+}
+
+.academic-link i {
+    color: var(--primary-color);
+    font-size: 1rem;
+}
+
+.academic-link:hover {
+    transform: translateY(-2px);
+    border-color: var(--primary-color);
+    box-shadow: var(--shadow-md);
+    background-color: var(--background);
+}
+
+.academic-link:hover i {
+    color: var(--primary-dark);
+}
+
 /* ===========================
    Contact Section / Footer
    =========================== */
